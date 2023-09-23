@@ -64,3 +64,31 @@ h1 {
     justify-content: space-between;
   }
 }
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width:875px;
+  max-height:414 px;  
+  border-radius: 60px;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.red{
+  background-color: #FFF3F3;
+}
+
+.blue{
+  background-color:#F3FBFF;
+}
+.pink{
+  background-color: #FFFCF3;
+}
