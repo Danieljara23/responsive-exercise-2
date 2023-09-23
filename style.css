@@ -91,15 +91,17 @@ h1 {
 .card-info {
   width: 451px;
   height: 414px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 0px 60px 60px 0px;
   font-family: 'Roboto';
 }
 
-.info-cont
+.info-cont{
+  width: 360px;
+  height: 286px;
+  display: flex;
+  flex-direction: column;
+  
+}
 
 .card-eyebrow {
   width: 296.35px;
