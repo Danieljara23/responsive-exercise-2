@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 
 * {
   padding: 0;
@@ -93,21 +96,40 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 0px 60px 60px 0px;
+  font-family: 'Roboto';
 }
+
+.info-cont
 
 .card-eyebrow {
   width: 296.35px;
   height: 59px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .card-title {
   width: 360px;
   height: 76px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+
 }
 
 .card-body {
-  width: 333.15px;
-  height: 142px;
+max-width: 333.15px;
+max-height: 142px;
+  
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
 }
 
 .red{
