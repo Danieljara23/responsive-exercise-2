@@ -81,14 +81,10 @@ h1 {
   align-items: center;
 }
 
-
-.red{
-  background-color: #FFF3F3;
+:root{
+  --red:#FFF3F3;
+  --blue:#F3FBFF;
+  --pink:#FFFCF3;
 }
 
-.blue{
-  background-color:#F3FBFF;
-}
-.pink{
-  background-color: #FFFCF3;
-}
+
