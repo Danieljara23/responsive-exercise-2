@@ -68,19 +68,21 @@ h1 {
   display: flex;
   width: 875px;
   height: 414px;
+ 
 }
 
 .card-image {
-  max-width: 425px;
-  max-height: 414px;
-  object-fit: fill;
+  width: 425px;
+  height: 414px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 60px 0px 0px 60px;
 }
 .card-image img{
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
- 
+  
+  height: 100%;
 }
 
 .card-info {
@@ -90,6 +92,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 0px 60px 60px 0px;
 }
 
 .card-eyebrow {
