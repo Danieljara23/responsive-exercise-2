@@ -57,6 +57,7 @@ h1 {
 }
 .deals{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content:space-evenly;
   align-items: center;
@@ -105,11 +106,7 @@ h1 {
 }
 
 .card-eyebrow {
-  max-width: 296.35px;
-  max-height: 59px;
-  font-size: 14px;
   font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
   padding-top: 10px;
@@ -118,29 +115,19 @@ h1 {
 }
 
 .card-title {
-  max-width: 360px;
-  max-height: 76px;
-  font-size: 32px;
   font-weight: 700;
-  line-height: 38px;
   letter-spacing: 0em;
   padding-top: 10px;
   text-align: left;
 }
 
 .card-body {
-max-width: 333.15px;
-max-height: 142px;
-font-size: 18px;
 font-weight: 400;
-line-height: 21px;
 letter-spacing: 0em;
 padding-top: 10px;
 text-align: left;
 color: #5F6368;
 } 
-
-
 
 .red{
   background-color: #FFF3F3;
@@ -153,18 +140,8 @@ color: #5F6368;
   background-color: #FFFCF3;
 }
 
-/* @media screen and (width >= 600px) {
-  nav {
-    justify-content: space-between;
-  }
 
-  nav ul {
-    display: flex;
-    width: 150px;
-    justify-content: space-between;
-  }
-} */
-@media screen and (width >= 320px){
+@media (min-width >= 320px){
   nav {
     justify-content: space-between;
   }
@@ -175,8 +152,6 @@ color: #5F6368;
     justify-content: space-between;
   }
   .deals{
-    flex-wrap: wrap;
-    display: flex;
     justify-content: space-evenly;
   }
   .eyebrow{
@@ -225,7 +200,66 @@ color: #5F6368;
   }
 
 }
-@media screen and (width >= 769){
+@media (min-width >= 320px){
+  nav {
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+  }
+  .deals{
+    justify-content: space-evenly;
+  }
+  .eyebrow{
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0px 0px;
+    width: 349px;
+    height: 434px;
+  }
+  .card-image{
+    width: 348px;
+    height: 215px;
+    border-radius: 40px, 40px, 0px, 0px;
+  }
+  .card-info{
+    width: 349px;
+    height: 219px;
+    border-radius: 0px, 0px, 40px, 40px
+  }
+  .info-cont{
+    width: 278.92px;
+    height: 157px;
+    
+  }
+  .card-eyebrow{
+    width: 229.61px;
+    height: 36.37px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .card-title{
+    width: 278.92px;
+    height: 46.85px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .card-body{
+    width: 269px;
+    height: 94px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+}
+@media (min-width >= 769){
   .deals{
     flex-wrap: wrap;
   }
