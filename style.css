@@ -100,7 +100,7 @@ nav ul {
     width: 349px;
     height: 434px;
     font-family: 'Roboto';
-    padding: 10px;
+    padding-top: 20px;
   }
   .card-image{
     width: 348px;
@@ -337,7 +337,7 @@ nav ul {
     display: flex;
     width: 875px;
     height: 414px;
-    padding: 30px;
+    padding-top: 30px;
    
   }
   
