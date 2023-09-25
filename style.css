@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
 * {
   padding: 0;
   margin: 0;
@@ -40,95 +38,6 @@ nav ul {
   display: none;
   list-style: none;
 }
-
-.hero {
-  width: 100%;
-  background: linear-gradient(181deg, #2193B0 0.53%, #6DD5ED 99.54%);
-  height: 393px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 48px;
-  color: white;
-  text-align: center;
-}
-.deals{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content:space-evenly;
-  align-items: center;
-}
-.eyebrow{
-  width: 100%;
-  padding: 30px 10px 0px 0px;
-  color: #5F6368;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.cards-container{
-  padding-bottom: 200px;
-  justify-content: center;
-}
-.card{
-  display: flex;
-}
-
-.card-image {
-  width: 425px;
-  height: 414px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.card-image img{
-  height: 100%;
-}
-.card-info {
-  font-family: 'Roboto';
-}
-
-.info-cont{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  padding-left: 60px;
-}
-
-.card-eyebrow {
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #8A8A8A;
-}
-
-.card-title {
-  font-weight: 700;
-  letter-spacing: 0em;
-  padding-top: 10px;
-  text-align: left;
-}
-
-.card-body {
-font-weight: 400;
-letter-spacing: 0em;
-padding-top: 10px;
-text-align: left;
-color: #5F6368;
-} 
-
 .red{
   background-color: #FFF3F3;
 }
@@ -140,8 +49,123 @@ color: #5F6368;
   background-color: #FFFCF3;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .hero {
+    min-width: 320px;
+    width: 100%;
+    background: linear-gradient(181deg, #2193B0 0.53%, #6DD5ED 99.54%);
+    height: 393px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-@media (min-width >= 320px){
+  h1 {
+    font-family: Poppins;
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+  }
+
+  h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .eyebrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 349px;
+    height: 434px;
+    font-family: 'Roboto';
+    padding: 10px;
+  }
+  .card-image{
+    width: 348px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 40px 40px 0px 0px;
+
+  }
+  .card-image img{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .card-info{
+    width: 349px;
+    height: 219px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 40px 40px;
+  }
+
+  .info-cont{
+    width: 278.92px;
+    height: 157px;
+    padding-bottom: 20px;
+  }
+  .card-eyebrow{
+    max-width: 229.61px;
+    max-height: 36.37px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 10px;
+  
+  }
+  .card-title{
+    max-width: 278.92px;
+    max-height: 46.85px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .card-body{
+    width:257px;
+    height: 97px;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  } 
+} 
+@media screen and (min-width: 481px) and (max-width: 768px) {
   nav {
     justify-content: space-between;
   }
@@ -151,136 +175,179 @@ color: #5F6368;
     width: 150px;
     justify-content: space-between;
   }
-  .deals{
-    justify-content: space-evenly;
+  .hero {
+    min-width: 320px;
+    width: 100%;
+    background: linear-gradient(181deg, #2193B0 0.53%, #6DD5ED 99.54%);
+    height: 393px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  h1 {
+    font-family: Poppins;
+    font-size: 73px;
+    font-weight: 600;
+    line-height: 110px;
+    color: white;
+    text-align: center;
+  }
+
   .eyebrow{
-    font-size: 25px;
-    line-height: 38px;
+    padding: 30px;
+  }
+  h2{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+  
+  }
+  .deals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards-container{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   .card{
     display: flex;
-    flex-direction: column;
-    padding: 30px 30px 0px 0px;
-    width: 349px;
-    height: 434px;
-  }
-  .card-image{
-    width: 348px;
-    height: 215px;
-    border-radius: 40px, 40px, 0px, 0px;
-  }
-  .card-info{
-    width: 349px;
-    height: 219px;
-    border-radius: 0px, 0px, 40px, 40px
-  }
-  .info-cont{
-    width: 278.92px;
-    height: 157px;
-    
-  }
-  .card-eyebrow{
-    width: 229.61px;
-    height: 36.37px;
-    font-size: 11px;
-    line-height: 13px;
-  }
-  .card-title{
-    width: 278.92px;
-    height: 46.85px;
-    font-size: 21px;
-    line-height: 25px;
-  }
-  .card-body{
-    width: 269px;
-    height: 94px;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-}
-@media (min-width >= 320px){
-  nav {
-    justify-content: space-between;
-  }
-
-  nav ul {
-    display: flex;
-    width: 150px;
-    justify-content: space-between;
-  }
-  .deals{
-    justify-content: space-evenly;
-  }
-  .eyebrow{
-    font-size: 25px;
-    line-height: 38px;
-  }
-  .card{
-    display: flex;
-    flex-direction: column;
-    padding: 30px 30px 0px 0px;
-    width: 349px;
-    height: 434px;
-  }
-  .card-image{
-    width: 348px;
-    height: 215px;
-    border-radius: 40px, 40px, 0px, 0px;
-  }
-  .card-info{
-    width: 349px;
-    height: 219px;
-    border-radius: 0px, 0px, 40px, 40px
-  }
-  .info-cont{
-    width: 278.92px;
-    height: 157px;
-    
-  }
-  .card-eyebrow{
-    width: 229.61px;
-    height: 36.37px;
-    font-size: 11px;
-    line-height: 13px;
-  }
-  .card-title{
-    width: 278.92px;
-    height: 46.85px;
-    font-size: 21px;
-    line-height: 25px;
-  }
-  .card-body{
-    width: 269px;
-    height: 94px;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-}
-@media (min-width >= 769){
-  .deals{
-    flex-wrap: wrap;
-  }
-  .eyebrow{
-    font-size: 14px;
-    font-weight: 500;
+    width: 690px;
+    height: 414px;  
   }
   
-  .cards-container{
+  .card-image {
+    width: 309px;
+    height: 355px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 60px 0px 0px 60px;
   }
+  .card-image img{
+    
+    height: 100%;
+  }
+  
+  .card-info {
+    width: 381px;
+    height: 355px;
+    border-radius: 0px 60px 60px 0px;
+    font-family: 'Roboto';
+    display: flex;
+   justify-content: center;
+    align-items: center;
+  }
+  
+  .info-cont{
+    width: 284.38px;
+    height: 265.48px;
+  }
+  
+  .card-eyebrow {
+    width: 269px;
+    height: 50px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+  }
+  
+  .card-title {
+    width: 283.89px;
+    height: 65.11px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+  }
+  
+  .card-body {
+    width: 262.61px;
+    height: 142.22px;    
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    letter-spacing: 0em;
+    padding-top: 10px;
+  }
+  
+}
+@media screen and (width >= 769px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+  }
+  .hero {
+    min-width: 320px;
+    width: 100%;
+    background: linear-gradient(181deg, #2193B0 0.53%, #6DD5ED 99.54%);
+    height: 393px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-family: Poppins;
+    font-size: 106px;
+    font-weight: 600;
+    line-height: 159px;
+    color: white;
+    text-align: center;
+  }
+
+  .eyebrow{
+    padding: 30px;
+  }
+  h2{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+  
+  }
+  .deals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .card{
+    display: flex;
     width: 875px;
     height: 414px;
-    padding: 30px 30px 0px 0px;
+    padding: 30px;
    
   }
   
   .card-image {
     width: 425px;
     height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     border-radius: 60px 0px 0px 60px;
   }
   .card-image img{
@@ -292,41 +359,48 @@ color: #5F6368;
     width: 451px;
     height: 414px;
     border-radius: 0px 60px 60px 0px;
+    font-family: 'Roboto';
+    display: flex;
+   justify-content: center;
+    align-items: center;
   }
   
   .info-cont{
     width: 360px;
     height: 286px;
-    display: flex;
-    flex-direction: column;
   }
   
   .card-eyebrow {
-    max-width: 296.35px;
-    max-height: 59px;
+    width: 296.35px;
+    height: 59px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+    letter-spacing: 0em;
   }
   
   .card-title {
-    max-width: 360px;
-    max-height: 76px;
+    width: 360px;
+    height: 76px;
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
+    letter-spacing: 0em;
   }
   
-  .card-body {
-  max-width: 333.15px;
-  max-height: 142px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  } 
+    .card-body {
+    width: 333.15px;
+    height: 142px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    padding-top: 10px;
+  }
   
-  
-}
+} 
 
 
 
