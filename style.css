@@ -57,6 +57,9 @@ nav ul {
 .card-body{
 color:#5F6368;
 }
+.eyebrow{
+  color: #5F6368;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .hero {
